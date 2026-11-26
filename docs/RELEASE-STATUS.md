@@ -16,3 +16,5 @@ Outstanding: multiple independent projects, complete offline support for all eng
 
 ## Additional development
 Batch image detection, single-image COCO/YOLO export and local model cache inventory added. Runtime and type checks pending. Other previously listed gaps remain unless explicitly resolved.
+
+Workspace isolation added for datasets, classifiers and evaluations; default workspace retains legacy keys. Workspace switching reloads the renderer. Annotation state and advanced analysis are not persisted per project. Full workspace backup and runtime verification remain pending.
