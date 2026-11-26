@@ -1,0 +1,1 @@
+export type Detection={label:string;score:number};export function matches(rows:Detection[],label:string,threshold:number){return rows.some(r=>r.label.toLowerCase()===label.trim().toLowerCase()&&r.score>=threshold)}

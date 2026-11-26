@@ -20,3 +20,5 @@ Batch image detection, single-image COCO/YOLO export and local model cache inven
 Workspace isolation added for datasets, classifiers and evaluations; default workspace retains legacy keys. Workspace switching reloads the renderer. Annotation state and advanced analysis are not persisted per project. Full workspace backup and runtime verification remain pending.
 
 Seeded stratified holdout, optional training-only horizontal flips, completed classifier version snapshots and restoration, and user guide added. No resumable optimizer checkpoints or version comparison yet. Compilation and runtime tests pending.
+
+USB serial LED demonstration, single detection rule, firmware and rule test added. Electron serial permissions and hardware behavior require verification. No general automation builder or wireless ESP32 support. Remaining release gaps are not resolved by this commit.

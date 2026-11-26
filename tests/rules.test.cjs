@@ -1,0 +1,1 @@
+const test=require('node:test');const assert=require('node:assert/strict');const {matches}=require('../src/rules.ts');test('rules require exact label and threshold',()=>{assert.equal(matches([{label:'person',score:.8}],' Person ',.7),true);assert.equal(matches([{label:'person',score:.6}],'person',.7),false);assert.equal(matches([],'person',.7),false)});

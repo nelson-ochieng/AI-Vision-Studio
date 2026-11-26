@@ -1,0 +1,2 @@
+# USB LED demonstration
+Flash firmware/vision_led/vision_led.ino using Arduino IDE with the appropriate board and LED pin. Use 115200 baud. Close Arduino Serial Monitor, open Robotics, connect the USB device, choose a COCO label and confidence, and arm the rule. The firmware turns the LED off after two seconds without ON messages. This is a demonstration, not a machinery controller. Test the board and USB driver on Windows; ESP32 board LED pins vary. No wireless integration is included.
