@@ -1,2 +1,3 @@
 const test=require('node:test');const assert=require('node:assert/strict');const fs=require('node:fs');test('desktop security settings',()=>{const s=fs.readFileSync('main.cjs','utf8');assert.match(s,/nodeIntegration:false/);assert.match(s,/contextIsolation:true/)});test('build configuration',()=>{const p=require('../package.json');assert.equal(p.build.win.target,'nsis');assert.ok(p.dependencies['@tensorflow/tfjs'])});
+
 test('camera capture and dataset upload wiring',()=>{const s=fs.readFileSync('src/main.tsx','utf8');assert.match(s,/ctx\.drawImage\(v,0,0\)/);assert.match(s,/await addImages\(\[u\]\)/);assert.match(s,/await store\('samples',next\)/);assert.match(s,/Capture photo/);assert.match(s,/Upload image/);assert.match(s,/Capture training image/)});

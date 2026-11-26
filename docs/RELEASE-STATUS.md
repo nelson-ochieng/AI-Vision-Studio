@@ -1,6 +1,6 @@
 # Release candidate 1 — release gate
 
-Verified in the development container: Node unit tests for tracking and metrics, static source checks, ZIP integrity. npm registry DNS resolution failed, so dependencies, full type checking, actual inference, webcam and Windows installer remain unverified. No lockfile generated.
+Verified in the development container: Node unit tests for tracking and metrics, static source checks, ZIP integrity. npm registry DNS resolution failed, so dependencies, full type checking, actual inference, webcam and Windows installer remain unverified. No lockfile generated. No GitHub publication performed.
 
 New: approximate video tracking and counts, label filtering, dataset backup restore, image size/type checks, camera-only permission restrictions. Existing features retained in source; regression testing required.
 
