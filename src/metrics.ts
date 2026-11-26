@@ -1,0 +1,1 @@
+export function metrics(matrix:number[][]){return matrix.map((row,i)=>{const tp=row[i], actual=row.reduce((a,b)=>a+b,0), predicted=matrix.reduce((a,r)=>a+r[i],0);const precision=predicted?tp/predicted:0,recall=actual?tp/actual:0;return {precision,recall,f1:precision+recall?2*precision*recall/(precision+recall):0,support:actual}})}

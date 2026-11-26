@@ -1,0 +1,2 @@
+const test=require('node:test');const assert=require('node:assert/strict');const {metrics}=require('../src/metrics.ts');
+test('measured class metrics',()=>{const m=metrics([[8,2],[1,9]]);assert.equal(m[0].precision,8/9);assert.equal(m[0].recall,.8);assert.equal(m[1].support,10)});test('zero support does not produce NaN',()=>assert.deepEqual(metrics([[0]])[0],{precision:0,recall:0,f1:0,support:0}));
