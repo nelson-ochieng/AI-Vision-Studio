@@ -1,3 +1,5 @@
+<p align="center"><img src="public/logo.png" width="160" alt="AI Vision Studio application logo"></p>
+
 # AI Vision Studio
 
 **See. Learn. Train. Innovate.**
