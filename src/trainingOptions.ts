@@ -1,0 +1,2 @@
+export function splitIndices(n:number,seed=42){const a=Array.from({length:n},(_,i)=>i);let x=seed>>>0;for(let i=n-1;i>0;i--){x=(Math.imul(x,1664525)+1013904223)>>>0;const j=x%(i+1);[a[i],a[j]]=[a[j],a[i]]}return new Set(a.slice(0,Math.max(1,Math.floor(n/5))))}
+export function flipImage(im:HTMLImageElement){const c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;const ctx=c.getContext('2d')!;ctx.translate(c.width,0);ctx.scale(-1,1);ctx.drawImage(im,0,0);return c}

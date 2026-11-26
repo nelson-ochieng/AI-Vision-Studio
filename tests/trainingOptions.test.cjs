@@ -1,0 +1,1 @@
+const test=require('node:test');const assert=require('node:assert/strict');const {splitIndices}=require('../src/trainingOptions.ts');test('seeded held-out split is reproducible and bounded',()=>{const a=splitIndices(10);assert.equal(a.size,2);assert.deepEqual(a,splitIndices(10));assert.ok([...a].every(i=>i>=0&&i<10))});
