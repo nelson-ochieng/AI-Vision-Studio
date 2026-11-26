@@ -13,3 +13,6 @@ Outstanding: multiple independent projects, complete offline support for all eng
 - Restart offline and verify each model separately; do not claim offline support for failures.
 - npm run dist; install unsigned installer on a clean Windows test account and repeat smoke tests.
 - Review third-party licenses and select an original-code license before public distribution.
+
+## Additional development
+Batch image detection, single-image COCO/YOLO export and local model cache inventory added. Runtime and type checks pending. Other previously listed gaps remain unless explicitly resolved.

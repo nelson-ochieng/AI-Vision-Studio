@@ -1,0 +1,1 @@
+const test=require('node:test');const assert=require('node:assert/strict');const {yolo,cocoExport}=require('../src/exports.ts');test('annotation conversion',()=>{const b=[{x:0,y:0,w:.5,h:.5,label:'cup'}];assert.equal(yolo(b,['cup']),'0 0.25 0.25 0.5 0.5');assert.deepEqual(cocoExport(b,'a.jpg',100,200).annotations[0].bbox,[0,0,50,100])});

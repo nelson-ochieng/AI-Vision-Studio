@@ -1,0 +1,4 @@
+export type Box={x:number;y:number;w:number;h:number;label:string};
+export function yolo(boxes:Box[],names:string[]){return boxes.map(b=>[names.indexOf(b.label),b.x+b.w/2,b.y+b.h/2,b.w,b.h].join(' ')).join('\n')}
+export function cocoExport(boxes:Box[],name:string,width:number,height:number){const names=[...new Set(boxes.map(b=>b.label))];return {images:[{id:1,file_name:name,width,height}],categories:names.map((name,i)=>({id:i+1,name})),annotations:boxes.map((b,i)=>({id:i+1,image_id:1,category_id:names.indexOf(b.label)+1,bbox:[b.x*width,b.y*height,b.w*width,b.h*height],area:b.w*width*b.h*height,iscrowd:0}))}}
+export function saveFile(name:string,data:string){const a=document.createElement('a');const u=URL.createObjectURL(new Blob([data],{type:'text/plain'}));a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
